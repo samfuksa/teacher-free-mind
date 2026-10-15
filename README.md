@@ -3,7 +3,6 @@
 Moderní kolaborativní webová aplikace pro tvorbu myšlenkových map ve třídě bez nutnosti registrace a přihlašování studentů.
 
 - **Frontend**: React 19, Vite, Tailwind CSS v4, React Flow (`@xyflow/react`), **GSAP**, **Lenis** (plynulý scroll), **React Bits** efekty (ShinyText, DecryptedText, DotPattern, Dock).
-- **Designový systém**: Inspirován estetikou [Taste Skill](https://www.tasteskill.dev/) (čistá typografie, hmatové mikrointerakce, žádný generický AI šablonovitý vzhled).
 - **Backend**: Čisté PHP (REST API pro synchronizaci v reálném čase, import a export).
 - **Databáze**: MySQL / MariaDB (podpora XAMPP i produkčních hostingů).
 
