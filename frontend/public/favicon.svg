@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Pozadí: Prémiový tmavý gradient ve stylu Linear / Taste Skill -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Záře pro centrální uzel -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Barevné přechody pro spojnice -->
+    <linearGradient id="edgeTR" x1="32" y1="32" x2="48" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <linearGradient id="edgeBR" x1="32" y1="32" x2="49" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+
+    <linearGradient id="edgeTL" x1="32" y1="32" x2="16" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="edgeBL" x1="32" y1="32" x2="17" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Zaoblená dlaždice (Squircle) -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#312e81" stroke-width="1.5" />
+
+  <!-- Jemný svit v pozadí středu -->
+  <circle cx="32" cy="32" r="22" fill="url(#centerGlow)" />
+
+  <!-- Plynulé zaoblené spojovací křivky myšlenkové mapy -->
+  <path d="M 32 32 C 39 32, 42 23, 48 18" stroke="url(#edgeTR)" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 32 32 C 39 32, 42 40, 49 45" stroke="url(#edgeBR)" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 32 32 C 25 32, 22 24, 16 20" stroke="url(#edgeTL)" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 32 32 C 25 32, 22 39, 17 44" stroke="url(#edgeBL)" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Vnější barevné poduzly (bubliny) -->
+  <!-- Vpravo nahoře: Zelený uzel -->
+  <circle cx="48" cy="18" r="5.5" fill="#10b981" stroke="#ffffff" stroke-width="1.5" />
+  
+  <!-- Vpravo dole: Jantarový uzel -->
+  <circle cx="49" cy="45" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Vlevo nahoře: Tyrkysový uzel -->
+  <circle cx="16" cy="20" r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Vlevo dole: Růžový uzel -->
+  <circle cx="17" cy="44" r="5.5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Centrální hlavní uzel (Bílý se zářivým fialovým lemem) -->
+  <circle cx="32" cy="32" r="7.5" fill="#ffffff" stroke="#6366f1" stroke-width="2.5" />
+  <circle cx="32" cy="32" r="3" fill="#6366f1" />
+</svg>
